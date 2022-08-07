@@ -1,0 +1,6 @@
+#Removing duplicates accross a workbook. This is really helpful when working with >1,000 data points. 
+
+SubEntireColumnRange()
+ThisWorkbook.Worksheets("Combined").Range("C2:C7137").Select
+Cells.RemoveDuplicates Columns:=Array(3)
+End Sub
